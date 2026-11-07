@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamikk — Simplifying digital preservation</title>
+    <link rel="stylesheet" href="dynamikk.css">
+    <link rel="canonical" href="https://dynamikk.net/">
+    <meta name="description" content="Dynamikk Limited. Simplifying digital preservation. Compliant packaging of records and metadata (OAIS, E-ARK, METS, RiC, PREMIS, PRONOM, ...) by experts.">
+</head>
+<body vocab="https://schema.org/" class="font-sans text-dynamikk-navy bg-white flex flex-col min-h-screen">
+    <header typeof="Organization" id="dynamikk" resource="#dynamikk" class="w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 py-5 sticky top-0 z-50">
+        <div class="max-w-[1800px] mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a property="url" href="https://dynamikk.net" class="inline-block group">
+                <div property="name" class="font-logo font-light text-2xl tracking-logo uppercase text-black">
+                    Dynamikk Limited
+                </div>
+            </a>
+            <a property="email" content="contact@dynamikk.net" href="mailto:contact@dynamikk.net" class="text-sm text-dynamikk-blue hover:underline transition-all duration-300">
+                contact@dynamikk.net
+            </a>
+        </div>
+    </header>
+
+    <main typeof="Service" class="flex-grow">
+        <link property="provider" href="#dynamikk">
+        <meta property="areaServed" content="GB">
+        <section class="relative min-h-[85vh] flex items-center bg-dynamikk-dark">
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <img src="background.jpg" alt="Background" class="w-full h-full object-cover opacity-10 mix-blend-screen scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 max-w-[1800px] mx-auto px-6 lg:px-12 w-full pt-20 pb-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 max-w-3xl">
+                        <h1 property="name" class="animate-fade-up text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-8">
+                            Simplifying Digital Preservation
+                        </h1>
+
+                        <p property="description" class="animate-fade-up delay-100 text-lg sm:text-xl text-slate-400 leading-relaxed mb-10 font-light max-w-2xl">
+                            Compliant packaging of records and metadata by experts.
+                        </p>
+
+                        <div class="animate-fade-up delay-200 flex flex-wrap gap-2.5 max-w-xl">
+                            <div property="category" typeof="DefinedTerm" class="group relative">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">OAIS</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[130px] whitespace-normal z-30">
+                                    Open Archival Information System
+                                </div>
+                                <link property="inDefinedTermSet" href="https://www.iso.org/standards.html">
+                                <link property="inDefinedTermSet" href="https://msi.dublincore.org/">
+                                <link property="sameAs" href="https://www.iso.org/standard/87471.html">
+                                <link property="subjectOf" typeof="WebPage" resource="http://oais.info">
+                                <link property="subjectOf" typeof="WebPage" resource="https://msi.dublincore.org/standards/oais/">
+                                <meta property="name" content="Open Archival Information System">
+                                <meta property="alternateName" content="OAIS">
+                                <meta property="alternateName" content="ISO 14721">
+                            </div>
+
+                            <div property="category" typeof="DefinedTerm" class="group relative">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">METS</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[150px] whitespace-normal z-30">
+                                    Metadata Encoding and Transmission Standard
+                                </div>
+                                <link property="inDefinedTermSet" href="https://www.loc.gov/librarians/standards">
+                                <link property="inDefinedTermSet" href="https://msi.dublincore.org/">
+                                <link property="sameAs" href="https://www.loc.gov/standards/mets/">
+                                <link property="subjectOf" typeof="WebPage" resource="https://msi.dublincore.org/standards/mets/">
+                                <meta property="name" content="Metadata Encoding and Transmission Standard">
+                                <meta property="alternateName" content="METS">
+                            </div>
+
+                            <div property="category" typeof="DefinedTerm" class="group relative">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">RiC</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[150px] whitespace-normal z-30">
+                                    Records in Contexts
+                                </div>
+                                <link property="inDefinedTermSet" href="https://www.ica.org/online-resource-centre-2/">
+                                <link property="inDefinedTermSet" href="https://msi.dublincore.org/">
+                                <link property="sameAs" href="https://www.ica.org/ica-network/expert-groups/egad/records-in-contexts-ric/">
+                                <link property="subjectOf" typeof="WebPage" resource="https://msi.dublincore.org/standards/records-in-contexts/">
+                                <meta property="name" content="Records in Contexts">
+                                <meta property="alternateName" content="RiC">
+                            </div>
+
+                            <div property="category" typeof="DefinedTerm" class="group relative">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">PREMIS</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[170px] whitespace-normal z-30">
+                                    Preservation Metadata: Implementation Strategies
+                                </div>
+                                <link property="inDefinedTermSet" href="https://www.loc.gov/librarians/standards">
+                                <link property="inDefinedTermSet" href="https://msi.dublincore.org/">
+                                <link property="sameAs" href="https://www.loc.gov/standards/premis/">
+                                <link property="subjectOf" typeof="WebPage" resource="https://msi.dublincore.org/standards/premis/">
+                                <meta property="name" content="Preservation Metadata: Implementation Strategies">
+                                <meta property="alternateName" content="PREMIS">
+                            </div>
+
+                            <div property="category" typeof="DefinedTerm" class="group relative">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">PRONOM</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[160px] whitespace-normal z-30">
+                                    File format registry of the UK National Archives
+                                </div>
+                                <link property="inDefinedTermSet" href="https://www.dpconline.org/handbook/technical-solutions-and-tools/file-formats-and-standards">
+                                <link property="sameAs" href="https://pronom.nationalarchives.gov.uk">
+                                <meta property="name" content="PRONOM File Format Registry">
+                                <meta property="alternateName" content="PRONOM">
+                                <meta property="description" content="File format registry of the UK National Archives">
+                            </div>
+
+                            <div property="category" typeof="DefinedTerm" class="group relative">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">ISO 23081</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[140px] whitespace-normal z-30">
+                                    Metadata for records
+                                </div>
+                                <link property="inDefinedTermSet" href="https://www.iso.org/standards.html">
+                                <link property="sameAs" href="https://committee.iso.org/sites/tc46sc11/home/projects/published/iso-23081-metadata-for-records.html">
+                                <meta property="name" content="Metadata for records">
+                                <meta property="alternateName" content="ISO 23081">
+                            </div>
+
+                            <div property="category" typeof="DefinedTerm" class="group relative">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">E-ARK</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[180px] whitespace-normal z-30">
+                                    European Archival Records and Knowledge Preservation
+                                </div>
+                                <link property="inDefinedTermSet" href="https://dilcis.eu">
+                                <link property="subjectOf" typeof="WebPage" resource="https://dilcis.eu/specifications">
+                                <meta property="name" content="European Archival Records and Knowledge Preservation">
+                                <meta property="alternateName" content="E-ARK">
+                            </div>
+
+                            <div property="category" typeof="DefinedTerm" class="group relative">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">ISAD(G)</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[150px] whitespace-normal z-30">
+                                    General International Standard Archival Description
+                                </div>
+                                <link property="inDefinedTermSet" href="https://www.ica.org/online-resource-centre-2/">
+                                <link property="inDefinedTermSet" href="https://www2.archivists.org/standards/external/91">
+                                <link property="inDefinedTermSet" href="https://msi.dublincore.org/">
+                                <link property="sameAs" href="https://www.ica.org/resource/isadg-general-international-standard-archival-description-second-edition/">
+                                <link property="subjectOf" typeof="WebPage" resource="https://www2.archivists.org/groups/standards-committee/international-standard-archival-description-general-isadg">
+                                <link property="subjectOf" typeof="WebPage" resource="https://msi.dublincore.org/standards/isad-g/">
+                                <meta property="name" content="General International Standard Archival Description">
+                                <meta property="alternateName" content="ISAD(G)">
+                            </div>
+
+                            <div property="category" typeof="DefinedTerm" class="group relative">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">CIDOC-CRM</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[140px] whitespace-normal z-30">
+                                    CIDOC's Conceptual Reference Model
+                                </div>
+                                <link property="sameAs" href="https://cidoc-crm.org/">
+                                <link property="inDefinedTermSet" href="https://msi.dublincore.org/">
+                                <link property="subjectOf" typeof="WebPage" resource="https://msi.dublincore.org/standards/cidoc-crm/">
+                                <meta property="name" content="CIDOC Conceptual Reference Model">
+                                <meta property="alternateName" content="CIDOC-CRM">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div property="potentialAction" typeof="QuoteAction" id="request-quote" class="scroll-mt-24 lg:col-span-5 w-full animate-fade-up delay-300">
+                        <div class="bg-white border border-slate-200 p-8 sm:p-10 rounded-sm shadow-2xl">
+                            <h2 property="name" class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-6">Request quote</h2>
+                            <form typeof="EntryPoint" action="https://sll3nrlbxanwgprcfcftqxj55a0ktduz.lambda-url.eu-west-2.on.aws/" method="POST" class="space-y-5">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label for="name" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Name</label>
+                                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-500 focus:ring-1 focus:ring-slate-500 transition-all text-sm">
+                                    </div>
+
+                                    <div>
+                                        <label for="email" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Email</label>
+                                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-500 focus:ring-1 focus:ring-slate-500 transition-all text-sm">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="details" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Requirements</label>
+                                    <textarea about="#request-quote" property="description" id="details" name="details" rows="5" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-500 focus:ring-1 focus:ring-slate-500 transition-all text-sm resize-none" placeholder="E.g. deposit location, current structure and location, approximate size, time constraints." ></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-slate-900 text-white font-semibold rounded-sm border border-transparent hover:bg-transparent hover:border-slate-900 hover:text-slate-900 transition-all duration-300 text-sm shadow-md cursor-pointer">
+                                    Send
+                                </button>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 lg:py-32 bg-white">
+            <div class="max-w-[1800px] mx-auto px-6 lg:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+                    <div class="animate-fade-up delay-100 order-2 lg:order-1 lg:flex lg:flex-col lg:justify-center">
+                        <div class="relative rounded-sm overflow-hidden shadow-2xl">
+                            <div class="absolute inset-0 bg-dynamikk-blue/10 mix-blend-multiply z-10"></div>
+                            <img src="archive.jpg" alt="Archive" class="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                        </div>
+                    </div>
+
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-3xl lg:text-4xl font-bold text-dynamikk-navy mb-6 tracking-tight">Packaging for digital long-term preservation</h2>
+                        <div class="w-20 h-1 bg-black mb-8"></div>
+
+                        <div>
+                            <p>
+                                Making a deposit to a UK archive as a public entity, private organisation or individual, requires:
+                            </p>
+                            <ul class="list-disc pl-10 space-y-1 my-3 text-slate-600">
+                                <li>Compliance to standards</li>
+                                <li>Metadata quality</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p>
+                                It often involves:
+                            </p>
+                            <ul class="list-disc pl-10 space-y-1 my-3 text-slate-600">
+                                <li>Handling private/sensitive data</li>
+                                <li>Sending large amounts of data over a network</li>
+                                <li>Navigating unfamiliar user interfaces</li>
+                                <li>Technical communication</li>
+                            </ul>
+                        </div>
+
+                        <p class="font-semibold text-lg text-slate-900 pt-2">
+                            All of this is our expertise.
+                        </p>
+
+                        <p property="potentialAction" typeof="QuoteAction" class="mt-4">
+                            <meta property="name" content="Request a fixed-price quote">
+                            Let us <a property="target" href="#request-quote" class="text-dynamikk-blue hover:underline">know</a> your requirements. We'll provide an affordable, fixed-price quote.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section property="subjectOf" typeof="FAQPage" id="faq" class="pb-20 lg:pb-20 bg-white">
+            <div class="max-w-4xl mx-auto px-6 lg:px-12 border-t border-gray-100 pt-16">
+                <div class="mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-dynamikk-navy mb-6 tracking-tight">Frequently asked questions</h2>
+                    <div class="w-20 h-1 bg-black"></div>
+                </div>
+
+                <div class="space-y-4">
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
+                            <span property="name">What expertise do you have?</span>
+                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div property="acceptedAnswer" typeof="Answer" class="mt-4 space-y-3 text-sm text-slate-600 border-t border-slate-200/60 pt-4 leading-relaxed">
+                            <p property="text">
+                                We have considerable hands-on experience of working with long-term digital preservation software (OAIS), as well as with archival description and semantic technologies. We have cutting-edge competence, calling upon a member of the International Council on Archives' Expert Group on Archival Description, as well as an author of an accepted full paper at iPres 2026.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
+                            <span property="name">Which archival institutions do you support depositing to? </span>
+                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div property="acceptedAnswer" typeof="Answer" class="mt-4 space-y-3 text-sm text-slate-600 border-t border-slate-200/60 pt-4 leading-relaxed">
+                            <p property="text">We can prepare a deposit to any archive in the UK, from the National Archives to a local service. If you prefer, we can transfer the package for you too.</p>
+                        </div>
+                    </details>
+
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
+                            <span property="name">Which standards do you support?</span>
+                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div property="acceptedAnswer" typeof="Answer" class="mt-4 space-y-3 text-sm text-slate-600 border-t border-slate-200/60 pt-4 leading-relaxed">
+                            <p property="text">We support all major preservation, archival description, and records management standards — OAIS, E-ARK, METS, Records in Contexts, PREMIS, ISO 23081, ISAD(G), CIDOC-CRM, and more. However your data currently looks, we can handle it.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
+                            <span property="name">Can you extract records from a live system?</span>
+                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div property="acceptedAnswer" typeof="Answer" class="mt-4 space-y-3 text-sm text-slate-600 border-t border-slate-200/60 pt-4 leading-relaxed">
+                            <p property="text">Yes, both records and metadata. Depending upon the system and your requirements and restrictions, we can fetch what we need via API, or we can guide you.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
+                            <span property="name">Do you accept records stored on a hard drive or other storage device?</span>
+                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div property="acceptedAnswer" typeof="Answer" class="mt-4 space-y-3 text-sm text-slate-600 border-t border-slate-200/60 pt-4 leading-relaxed">
+                            <p property="text">Yes. You can send the hard drive to us, or we can guide you through a network transfer.</p>
+                        </div>
+                    </details>
+
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
+                            <span property="name">Can you handle private and/or sensitive data?</span>
+                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div property="acceptedAnswer" typeof="Answer" class="mt-4 space-y-3 text-sm text-slate-600 border-t border-slate-200/60 pt-4 leading-relaxed">
+                            <p property="text">Yes. We can filter it out, restrict access to it, and use metadata in different ways to flag it or label it, according to your requirements. Internally, we encapsulate and restrict access to all data. We work in accordance with UK GDPR.</p>
+                        </div>
+                    </details>
+
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
+                            <span property="name">Can you provide metadata for accountability?</span>
+                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div property="acceptedAnswer" typeof="Answer" class="mt-4 space-y-3 text-sm text-slate-600 border-t border-slate-200/60 pt-4 leading-relaxed">
+                            <p property="text">Yes. We can provide meta-metadata/paradata for all of our processes, according to your requirements.</p>
+                        </div>
+                    </details>
+
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                        <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
+                            <span property="name">Do you offer additional services?</span>
+                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div property="acceptedAnswer" typeof="Answer" class="mt-4 space-y-3 text-sm text-slate-600 border-t border-slate-200/60 pt-4 leading-relaxed">
+                            <div property="text">
+                                <p>Yes. We can handle other processes which often accompany packaging, including:</p>
+                                <ul class="list-disc pl-10 space-y-1 my-3 text-slate-600">
+                                    <li>Digitisation</li>
+                                    <li>Disposition</li>
+                                    <li>Storage</li>
+                                </ul>
+                                <p>We also offer consultancy.</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer about="#dynamikk" class="bg-white border-t border-gray-200 mt-auto">
+        <div class="max-w-[1800px] mx-auto px-6 lg:px-12 pt-6 pb-6 grid grid-cols-1 md:grid-cols-3 items-center md:items-start gap-6">
+
+            <div class="flex flex-col items-center md:items-start text-center md:text-left max-w-xs justify-self-center md:justify-self-start">
+                <div class="text-xs text-gray-400">
+                    <p class="mb-1">&copy; 2026 Dynamikk Limited</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a property="publishingPrinciples" typeof="WebPage" href="privacy_policy.html" class="text-xs text-dynamikk-blue transition-colors font-medium hover:underline">
+                    Privacy policy
+                    <meta property="name" content="Privacy policy">
+                </a>
+            </div>
+
+            <div class="text-center md:text-right">
+                <a href="mailto:contact@dynamikk.net" class="text-xs text-dynamikk-blue transition-colors hover:underline">
+                    contact@dynamikk.net
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
