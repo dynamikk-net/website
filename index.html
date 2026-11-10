@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head >
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamikk — Simplifying digital preservation</title>
+    <title>Dynamikk Limited | Simplifying digital preservation</title>
     <link rel="stylesheet" href="dynamikk.css">
-    <link rel="canonical" href="https://dynamikk.net/">
+    <link rel="canonical" href="https://dynamikk.net"/>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <meta name="description" content="Dynamikk Limited. Simplifying digital preservation. Compliant packaging of records and metadata (OAIS, E-ARK, METS, RiC, PREMIS, PRONOM, ...) by experts.">
 </head>
-<body vocab="https://schema.org/" class="font-sans text-dynamikk-navy bg-white flex flex-col min-h-screen">
+<body vocab="https://schema.org/" typeof="WebSite" class="font-sans text-dynamikk-navy bg-white flex flex-col min-h-screen">
+    <meta property="name" content="Dynamikk Limited">
+    <link property="publisher" resource="#dynamikk"/>
+    <link property="url" href="https://dynamikk.net"/>
     <header typeof="Organization" id="dynamikk" resource="#dynamikk" class="w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 py-5 sticky top-0 z-50">
-        <link property="logo" href="logo.png" />
-        <link property="image" href="logo.png" />
+        <link property="url" href="https://dynamikk.net/" />
         <div class="max-w-[1800px] mx-auto px-6 lg:px-12 flex justify-between items-center">
-            <a property="url" href="https://dynamikk.net" class="inline-block group">
-                <div property="name" class="font-logo font-light text-2xl tracking-logo uppercase text-black">
-                    Dynamikk Limited
-                </div>
-            </a>
-            <a property="email" content="contact@dynamikk.net" href="mailto:contact@dynamikk.net" class="text-sm text-dynamikk-blue hover:underline transition-all duration-300">
+            <div class="flex items-center gap-5">
+                <img property="logo image" src="logo.png" alt="Dynamikk Limited logo" class="h-8 w-auto object-contain" />
+                <a href="./index.html" class="inline-block group">
+                    <div about="#dynamikk" property="name" class="font-logo font-light text-2xl tracking-logo uppercase text-black">
+                        Dynamikk Limited
+                    </div>
+                </a>
+            </div>
+            <a property="email" content="contact@dynamikk.net" href="mailto:contact@dynamikk.net" class="text-sm text-dynamikk-blue hover:underline">
                 contact@dynamikk.net
             </a>
         </div>
@@ -30,7 +35,6 @@
         <meta property="areaServed" content="GB">
         <section class="relative min-h-[85vh] flex items-center bg-dynamikk-dark">
             <div class="absolute inset-0 z-0 overflow-hidden">
-                <img src="background.jpg" alt="Background" class="w-full h-full object-cover opacity-10 mix-blend-screen scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent"></div>
                 <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent"></div>
             </div>
@@ -38,18 +42,18 @@
             <div class="relative z-10 max-w-[1800px] mx-auto px-6 lg:px-12 w-full pt-20 pb-24">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <div class="lg:col-span-7 max-w-3xl">
-                        <h1 property="name" class="animate-fade-up text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-8">
+                        <h1 property="name" class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight mb-8">
                             Simplifying Digital Preservation
                         </h1>
 
-                        <p property="description" class="animate-fade-up delay-100 text-lg sm:text-xl text-slate-400 leading-relaxed mb-10 font-light max-w-2xl">
+                        <p property="description" class="text-lg sm:text-xl text-slate-400 leading-relaxed mb-10 font-light max-w-2xl">
                             Compliant packaging of records and metadata by experts.
                         </p>
 
-                        <div class="animate-fade-up delay-200 flex flex-wrap gap-2.5 max-w-xl">
+                        <div class="flex flex-wrap gap-2.5 max-w-xl">
                             <div property="category" typeof="DefinedTerm" class="group relative">
-                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">OAIS</span>
-                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[130px] whitespace-normal z-30">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white block">OAIS</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 w-max max-w-[130px] whitespace-normal z-30">
                                     Open Archival Information System
                                 </div>
                                 <link property="inDefinedTermSet" href="https://www.iso.org/standards.html">
@@ -63,8 +67,8 @@
                             </div>
 
                             <div property="category" typeof="DefinedTerm" class="group relative">
-                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">METS</span>
-                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[150px] whitespace-normal z-30">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white block">METS</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 w-max max-w-[150px] whitespace-normal z-30">
                                     Metadata Encoding and Transmission Standard
                                 </div>
                                 <link property="inDefinedTermSet" href="https://www.loc.gov/librarians/standards">
@@ -76,8 +80,8 @@
                             </div>
 
                             <div property="category" typeof="DefinedTerm" class="group relative">
-                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">RiC</span>
-                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[150px] whitespace-normal z-30">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white block">RiC</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 w-max max-w-[150px] whitespace-normal z-30">
                                     Records in Contexts
                                 </div>
                                 <link property="inDefinedTermSet" href="https://www.ica.org/online-resource-centre-2/">
@@ -89,8 +93,8 @@
                             </div>
 
                             <div property="category" typeof="DefinedTerm" class="group relative">
-                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">PREMIS</span>
-                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[170px] whitespace-normal z-30">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white block">PREMIS</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 w-max max-w-[170px] whitespace-normal z-30">
                                     Preservation Metadata: Implementation Strategies
                                 </div>
                                 <link property="inDefinedTermSet" href="https://www.loc.gov/librarians/standards">
@@ -102,8 +106,8 @@
                             </div>
 
                             <div property="category" typeof="DefinedTerm" class="group relative">
-                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">PRONOM</span>
-                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[160px] whitespace-normal z-30">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white block">PRONOM</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 w-max max-w-[160px] whitespace-normal z-30">
                                     File format registry of the UK National Archives
                                 </div>
                                 <link property="inDefinedTermSet" href="https://www.dpconline.org/handbook/technical-solutions-and-tools/file-formats-and-standards">
@@ -114,8 +118,8 @@
                             </div>
 
                             <div property="category" typeof="DefinedTerm" class="group relative">
-                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">ISO 23081</span>
-                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[140px] whitespace-normal z-30">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white block">ISO 23081</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 w-max max-w-[140px] whitespace-normal z-30">
                                     Metadata for records
                                 </div>
                                 <link property="inDefinedTermSet" href="https://www.iso.org/standards.html">
@@ -125,8 +129,8 @@
                             </div>
 
                             <div property="category" typeof="DefinedTerm" class="group relative">
-                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">E-ARK</span>
-                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[180px] whitespace-normal z-30">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white block">E-ARK</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 w-max max-w-[180px] whitespace-normal z-30">
                                     European Archival Records and Knowledge Preservation
                                 </div>
                                 <link property="inDefinedTermSet" href="https://dilcis.eu">
@@ -136,8 +140,8 @@
                             </div>
 
                             <div property="category" typeof="DefinedTerm" class="group relative">
-                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">ISAD(G)</span>
-                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[150px] whitespace-normal z-30">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white block">ISAD(G)</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 w-max max-w-[150px] whitespace-normal z-30">
                                     General International Standard Archival Description
                                 </div>
                                 <link property="inDefinedTermSet" href="https://www.ica.org/online-resource-centre-2/">
@@ -151,8 +155,8 @@
                             </div>
 
                             <div property="category" typeof="DefinedTerm" class="group relative">
-                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white transition-colors duration-300 block">CIDOC-CRM</span>
-                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 w-max max-w-[140px] whitespace-normal z-30">
+                                <span property="termCode" class="cursor-help px-3 py-1.5 bg-slate-900/60 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 tracking-wider hover:border-slate-600 hover:text-white block">CIDOC-CRM</span>
+                                <div class="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-900 border border-slate-700 text-[11px] text-slate-200 rounded shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 w-max max-w-[140px] whitespace-normal z-30">
                                     CIDOC's Conceptual Reference Model
                                 </div>
                                 <link property="sameAs" href="https://cidoc-crm.org/">
@@ -164,28 +168,28 @@
                         </div>
                     </div>
 
-                    <div property="potentialAction" typeof="QuoteAction" id="request-quote" class="scroll-mt-24 lg:col-span-5 w-full animate-fade-up delay-300">
+                    <div property="potentialAction" typeof="QuoteAction" id="request-quote" class="scroll-mt-24 lg:col-span-5 w-full">
                         <div class="bg-white border border-slate-200 p-8 sm:p-10 rounded-sm shadow-2xl">
                             <h2 property="name" class="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-6">Request quote</h2>
                             <form typeof="EntryPoint" action="https://d3km5q0nbjydla.cloudfront.net" method="POST" class="space-y-5">
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div>
                                         <label for="name" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Name</label>
-                                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-500 focus:ring-1 focus:ring-slate-500 transition-all text-sm">
+                                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-500 focus:ring-1 focus:ring-slate-500 text-sm">
                                     </div>
 
                                     <div>
                                         <label for="email" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Email</label>
-                                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-500 focus:ring-1 focus:ring-slate-500 transition-all text-sm">
+                                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-500 focus:ring-1 focus:ring-slate-500 text-sm">
                                     </div>
                                 </div>
 
                                 <div>
                                     <label for="details" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Requirements</label>
-                                    <textarea about="#request-quote" property="description" id="details" name="details" rows="5" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-500 focus:ring-1 focus:ring-slate-500 transition-all text-sm resize-none" placeholder="E.g. deposit location, current structure and location, approximate size, time constraints." ></textarea>
+                                    <textarea about="#request-quote" property="description" id="details" name="details" rows="5" required class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-500 focus:ring-1 focus:ring-slate-500 text-sm resize-none" placeholder="E.g. deposit location, current structure and location, approximate size, time constraints." ></textarea>
                                 </div>
 
-                                <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-slate-900 text-white font-semibold rounded-sm border border-transparent hover:bg-transparent hover:border-slate-900 hover:text-slate-900 transition-all duration-300 text-sm shadow-md cursor-pointer">
+                                <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3.5 bg-slate-900 text-white font-semibold rounded-sm border border-transparent hover:bg-transparent hover:border-slate-900 hover:text-slate-900 text-sm shadow-md cursor-pointer">
                                     Send
                                 </button>
                              </form>
@@ -198,10 +202,10 @@
         <section id="services" class="py-24 lg:py-32 bg-white">
             <div class="max-w-[1800px] mx-auto px-6 lg:px-12">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-                    <div class="animate-fade-up delay-100 order-2 lg:order-1 lg:flex lg:flex-col lg:justify-center">
+                    <div class="order-2 lg:order-1 lg:flex lg:flex-col lg:justify-center">
                         <div class="relative rounded-sm overflow-hidden shadow-2xl">
                             <div class="absolute inset-0 bg-dynamikk-blue/10 mix-blend-multiply z-10"></div>
-                            <img src="archive.jpg" alt="Archive" class="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                            <img src="archive.jpg" alt="Archive" class="w-full h-[500px] object-cover grayscale hover:grayscale-0">
                         </div>
                     </div>
 
@@ -237,7 +241,7 @@
 
                         <p property="potentialAction" typeof="QuoteAction" class="mt-4">
                             <meta property="name" content="Request a fixed-price quote">
-                            Let us <a property="target" href="#request-quote" class="text-dynamikk-blue hover:underline">know</a> your requirements. We'll provide an affordable, fixed-price quote.
+                            Let us <a property="target" href="#request-quote" class="text-dynamikk-blue hover:underline">know your requirements</a>. We'll provide an affordable, fixed-price quote.
                         </p>
                     </div>
                 </div>
@@ -252,10 +256,10 @@
                 </div>
 
                 <div class="space-y-4">
-                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden hover:shadow-md">
                         <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
                             <span property="name">What expertise do you have?</span>
-                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                            <span class="group-open:rotate-180 text-dynamikk-blue">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -268,10 +272,10 @@
                         </div>
                     </details>
 
-                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden hover:shadow-md">
                         <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
                             <span property="name">Which archival institutions do you support depositing to? </span>
-                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                            <span class="group-open:rotate-180 text-dynamikk-blue">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -282,10 +286,10 @@
                         </div>
                     </details>
 
-                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden hover:shadow-md">
                         <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
                             <span property="name">Which standards do you support?</span>
-                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                            <span class="group-open:rotate-180 text-dynamikk-blue">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -297,10 +301,10 @@
                         </div>
                     </details>
 
-                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden hover:shadow-md">
                         <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
                             <span property="name">Can you extract records from a live system?</span>
-                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                            <span class="group-open:rotate-180 text-dynamikk-blue">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -312,10 +316,10 @@
                         </div>
                     </details>
 
-                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden hover:shadow-md">
                         <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
                             <span property="name">Do you accept records stored on a hard drive or other storage device?</span>
-                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                            <span class="group-open:rotate-180 text-dynamikk-blue">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -326,10 +330,10 @@
                         </div>
                     </details>
 
-                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden hover:shadow-md">
                         <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
                             <span property="name">Can you handle private and/or sensitive data?</span>
-                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                            <span class="group-open:rotate-180 text-dynamikk-blue">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -340,10 +344,10 @@
                         </div>
                     </details>
 
-                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden hover:shadow-md">
                         <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
                             <span property="name">Can you provide metadata for accountability?</span>
-                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                            <span class="group-open:rotate-180 text-dynamikk-blue">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -354,10 +358,10 @@
                         </div>
                     </details>
 
-                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:shadow-md">
+                    <details property="mainEntity" typeof="Question" class="group bg-slate-50 border border-slate-100 rounded-sm p-6 [&_summary::-webkit-details-marker]:hidden hover:shadow-md">
                         <summary class="flex justify-between items-center font-semibold text-lg text-slate-800 cursor-pointer list-none select-none">
                             <span property="name">Do you offer additional services?</span>
-                            <span class="transition group-open:rotate-180 text-dynamikk-blue">
+                            <span class="group-open:rotate-180 text-dynamikk-blue">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -390,14 +394,14 @@
             </div>
 
             <div class="text-center">
-                <a property="publishingPrinciples" typeof="WebPage" href="privacy_policy.html" class="text-xs text-dynamikk-blue transition-colors font-medium hover:underline">
+                <a property="publishingPrinciples" typeof="WebPage" href="privacy_policy.html" class="text-xs text-dynamikk-blue font-medium hover:underline">
                     Privacy policy
                     <meta property="name" content="Privacy policy">
                 </a>
             </div>
 
             <div class="text-center md:text-right">
-                <a href="mailto:contact@dynamikk.net" class="text-xs text-dynamikk-blue transition-colors hover:underline">
+                <a href="mailto:contact@dynamikk.net" class="text-xs text-dynamikk-blue hover:underline">
                     contact@dynamikk.net
                 </a>
             </div>
